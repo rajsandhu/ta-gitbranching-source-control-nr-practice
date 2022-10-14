@@ -3,9 +3,9 @@ import logging
 import boto3
 from botocore.exceptions import ClientError
 
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.ERROR)
 logger = logging.getLogger()
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.ERROR)
 
 ec2_client = boto3.client("ec2")
 
